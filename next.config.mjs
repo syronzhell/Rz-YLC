@@ -1,0 +1,2 @@
+import {withWorkflow} from 'workflow/next';
+export default withWorkflow({poweredByHeader:false,async headers(){return [{source:'/cms.html',headers:[{key:'Content-Security-Policy',value:"default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"},{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Policy',value:'no-referrer'}]}];}});
